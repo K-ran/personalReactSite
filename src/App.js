@@ -6,7 +6,7 @@ import MainContent from './components/main_content/MainContent'
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Navbar/>
       <MainContent/>
       <Footer/>
