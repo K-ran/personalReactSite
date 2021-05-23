@@ -49,3 +49,15 @@
     padding: 0.5em;
     margin: auto;
 }
+
+.navbar-menuItem > a:hover,
+.navbar-menuItem > a:focus
+{
+    /* border-bottom: 1px solid mediumseagreen; */
+    color: rgb(109, 253, 174);
+}
+
+.navbar-menuItem-active > a
+{
+    color: rgb(109, 253, 174);
+}
