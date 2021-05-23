@@ -25,6 +25,11 @@
     padding-left: 1rem;
 }
 
+.navbar-title-icon
+{
+    padding: 0.1rem;
+}
+
 .navbar-menuItemList{
     display: flex;
     flex-direction: column;
