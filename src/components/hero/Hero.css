@@ -1,0 +1,26 @@
+.hero{
+    background-image:  linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url('/src/images/banner.jpg');
+    color: white;
+    min-height: 10em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.quote
+{
+    max-width: 80%;
+    text-align: center;
+}
+
+.author
+{
+    margin-top: .5em;
+    max-width: 80%;
+}
