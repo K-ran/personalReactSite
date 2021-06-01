@@ -7,12 +7,12 @@ import Hero from './components/hero/Hero';
 
 function App() {
   return (
-    <div className="app">
+    <main className="app">
       <Navbar/>
       <Hero/>
-      <MainContent/>
+      <MainContent />
       <Footer/>
-    </div>
+    </main>
   );
 }
 

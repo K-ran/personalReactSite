@@ -8,7 +8,7 @@ class Aboutme extends Component {
             <div className="aboutme">
                 <img src = {profile_image} className="profile_image" alt="something" />
                 <div className="profile_desc">
-                Hi, I am Karan. I love to create new products and projects. My core interests include embedded firmwares, operating systems and computer networks. Sometimes I tinker with web and  app developments as well. Do check out my projects below to know more!
+                Hi, I am Karan. I am a software developer by profession and I love to work on new products. Mostly I work with system programming but I do tinker with web and app development. Do check out my projects below to know more!
                 </div>
             </div>
         );

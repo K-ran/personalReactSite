@@ -5,10 +5,10 @@ class Hero extends Component {
         return (
             <div className="hero">
                 <div className="quote">
-                    "Most people overestimate what they can do in one year and underestimate what they can do in ten years"
+                    "Chains of habit are too light to be felt until they are too heavy to be broken."
                 </div>
                 <div className="author">
-                    - Someone smart
+                    -Warren Buffett
                 </div>
             </div>
         );
