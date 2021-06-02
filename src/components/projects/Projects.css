@@ -1,0 +1,49 @@
+
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+
+.project_card
+{
+    width: 20em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15em;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 4px black;
+    transition: box-shadow 10ms; 
+      
+}
+
+.project_card:hover,
+.project_card:focus
+{
+    position: relative; 
+    top: -1px;
+    box-shadow: 0px 4px 6px black;
+}
+.project_name
+{
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    color: white;
+    padding: 1em;
+    font-weight: 600;
+     
+}

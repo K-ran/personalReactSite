@@ -8,7 +8,7 @@ class MainContent extends Component {
         return (
             <main className="main_content">
                 <Aboutme/>
-                {/* <Projects/> */}
+                <Projects/>
             </main>
         );
     }
