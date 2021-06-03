@@ -13,6 +13,7 @@ class Projects extends Component {
     render() {
         return (
             <div className="card_container">
+                <div className="projects_title">Projects</div>
                 <Items/>
                 <Items/>
                 <Items/>

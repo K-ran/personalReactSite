@@ -47,3 +47,43 @@
     font-weight: 600;
      
 }
+
+.projects_title{
+    margin-bottom: 0.5em;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.project_short_description{
+    color: transparent;
+    height: 100%;
+    text-align: left;
+    padding: 1em;
+    font-weight: 600;
+    transition: color .5s, background-color .5s;
+}
+
+.project_short_description:hover,
+.project_short_description:focus
+{
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.project_short_description .project_know_more
+{
+    color: transparent;
+    transition: color .5s;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 1em;
+    letter-spacing: .2rem;
+}
+.project_short_description:hover .project_know_more,
+.project_short_description:focus .project_know_more
+{
+    color: thistle;
+    cursor: pointer;
+}
