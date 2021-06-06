@@ -8,37 +8,31 @@ class Item extends Component {
 
     constructor(props)
     {
-        super()
+        super(props)
+        console.log(props.info)
         this.state = {
-            "id":0,
-            "name": "Project0",
-            "short_description":"this is a short description",
-            "long_descriptio": "this is a long description",
-            "tags":["tag1", "tag2"],
-            "data":"1622641682",
-            "links":{
-                "github":"https://github.com/k-ran",
-                "medium":"https://medium.com",
-                "youtube":"https://youtube.com"    
-            },
-            "banner_image":"project0.jpg",
+            "id":props.info.id,
+            "name": props.info.name,
+            "short_description":props.info.short_description,
+            "long_descriptio": props.info.long_description,
+            "tags":props.info.tags,
+            "date":props.info.date,
+            "links":props.info.links,
+            "banner_image":props.info.banner_image,
             "clicked":false
         }
         
     }
     know_more_handler = () =>{
-        console.log("clicked id: "+ this.state.id)
         this.setState(prevState => {
             let newState = prevState;
             newState.clicked = !newState.clicked;
             return newState;
         })
-        console.log(this.state.clicked);
     }
 
 
     get_link_jsx = (key,site,link) => {
-        console.log(site,link);
         switch (site) {
             case "github":
                 return <a className = "fa_link_anchor" rel="noopener noreferrer" target="_blank" href={link} key={key}><FontAwesomeIcon  size='2x' icon={faGithubSquare} /></a>
@@ -68,7 +62,6 @@ class Item extends Component {
         let mystyle = {
             "backgroundImage": "url("+image.default+")"
         } 
-        console.log(image.default)
 
         const modal = 
         <Modal className="modal" overlayClassName="modal_overlay" isOpen={this.state.clicked} onRequestClose={this.know_more_handler}>

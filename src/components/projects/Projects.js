@@ -7,16 +7,21 @@ class Projects extends Component {
     constructor()
     {
         super()
-        console.log(project_data)
+        
     }
-
+    
     render() {
+        let item_array = []
+        let i=0;
+        while(i<project_data.length)
+        {
+            item_array.push(<Items key={project_data[i].id} info={project_data[i]}/>)
+            i++;
+        }
         return (
             <div className="card_container">
                 <div className="projects_title">Projects</div>
-                <Items/>
-                <Items/>
-                <Items/>
+                {item_array}
             </div>
         );
     }
