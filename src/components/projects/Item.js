@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Projects.css';
+import Modal from 'react-modal';
 
 class Item extends Component {
 
@@ -18,13 +19,20 @@ class Item extends Component {
                 "medium":"",
                 "youtube":"https://youtube.com"    
             },
-            "banner_image":"project0.jpg"
+            "banner_image":"project0.jpg",
+            "clicked":false
         }
         
     }
 
     know_more_handler = () =>{
         console.log("clicked id: "+ this.state.id)
+        this.setState(prevState => {
+            let newState = prevState;
+            newState.clicked = !newState.clicked;
+            return newState;
+        })
+        console.log(this.state.clicked);
     }
 
     render() {
@@ -35,6 +43,14 @@ class Item extends Component {
         console.log(image.default)
         return (
             <div className="project_card" style={mystyle}>
+                <Modal className="modal" overlayClassName="modal_overlay" isOpen={this.state.clicked} onRequestClose={this.know_more_handler}>
+                    <img src={image.default} alt="someimage" className="modal_image"/>
+                    <div className="modal_container">
+                        <div className="modal_project_name">{this.state.name}</div>
+                        <div className="modal_project_long_desc">{this.state.long_descriptio}</div>
+                    </div>
+                </Modal>
+
                 <div className="project_short_description" >{this.state.short_description}
                 <br/>
                 <div className="project_know_more" onClick={this.know_more_handler}> KNOW MORE </div>
