@@ -4,11 +4,6 @@ import project_data from '../../project_data.js';
 import Items from './Item';
 
 class Projects extends Component {
-    constructor()
-    {
-        super()
-        
-    }
     
     render() {
         let item_array = []

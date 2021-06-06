@@ -62,6 +62,8 @@
     padding: 1em;
     font-weight: 600;
     transition: color .5s, background-color .5s;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
 }
 
 .project_short_description:hover,
@@ -136,7 +138,8 @@
 {
     margin-top: 1em;
     flex-grow: 1;
-    
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
 }
 
 
@@ -149,6 +152,7 @@
 .modal_footer{
     display: flex;
     justify-content: space-between;
+    margin-top: 1em;
 }
 
 .modal_external_links_container
@@ -161,6 +165,7 @@
 {
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 0.5em;
 }
 
 .modal_project_links

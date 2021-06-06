@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './Projects.css';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithubSquare, faMedium, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
+import { faGooglePlay, faGithubSquare, faMedium, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 class Item extends Component {
 
@@ -40,8 +41,10 @@ class Item extends Component {
                 return <a className = "fa_link_anchor" rel="noopener noreferrer" target="_blank" href={link} key={key}><FontAwesomeIcon   size='2x' icon={faYoutubeSquare}  /></a>
             case "medium":
                 return <a className = "fa_link_anchor" rel="noopener noreferrer" target="_blank"href={link} key={key}><FontAwesomeIcon  size='2x' icon={faMedium}  /></a>
+            case "google_play":
+                return <a className = "fa_link_anchor" rel="noopener noreferrer" target="_blank"href={link} key={key}><FontAwesomeIcon  size='2x' icon={faGooglePlay}  /></a>    
             default:
-                break;
+                return <a className = "fa_link_anchor" rel="noopener noreferrer" target="_blank"href={link} key={key}><FontAwesomeIcon  size='2x' icon={faLink}  /></a>
         }
     }
 
@@ -71,7 +74,7 @@ class Item extends Component {
                 <div className="modal_project_long_desc">{this.state.long_descriptio}</div>
                 <div className="modal_footer">
                     <div className="modal_external_links_container">
-                        <div className="external_link_heading">External links: </div>
+                        <div className="external_link_heading">External links</div>
                         <div className="modal_project_links">{this.get_links()}</div>
                     </div>
                     <div className="modal_close_container">
