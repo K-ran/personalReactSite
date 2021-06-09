@@ -5,7 +5,7 @@ import './Aboutme.css';
 class Aboutme extends Component {
     render() {
         return (
-            <div className="aboutme">
+            <div id = "aboutme" className="aboutme">
                 <div className="about_me_title">About me</div>
                 <img src = {profile_image} className="profile_image" alt="something" />
                 <div className="profile_desc">

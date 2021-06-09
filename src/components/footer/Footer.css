@@ -11,4 +11,15 @@
 .copyright
 {
     font-size: .8rem;
+    margin-top: 0;
+}
+
+.social_links
+{
+    padding: 1em;
+}
+.fa_link_footer
+{
+    color: white;
+    margin: .5em;
 }

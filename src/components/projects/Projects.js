@@ -14,7 +14,7 @@ class Projects extends Component {
             i++;
         }
         return (
-            <div className="card_container">
+            <div id="projects" className="card_container">
                 <div className="projects_title">Projects</div>
                 {item_array}
             </div>

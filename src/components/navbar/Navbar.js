@@ -30,10 +30,10 @@ class Navbar extends Component {
                 </div>
                
                 <ul className="navbar-menuItemList" style={{display: this.state.barextended?"flex":"none"}}>
-                    <li className="navbar-menuItem" ><a href="/#">Home</a></li>
-                    <li className="navbar-menuItem" ><a href="/#">About</a></li>
-                    <li className="navbar-menuItem" ><a href="/#">Projects</a></li>
-                    <li className="navbar-menuItem" ><a href="/#">Contacts</a></li>
+                    <li className="navbar-menuItem" ><a href="#home">Home</a></li>
+                    <li className="navbar-menuItem" ><a href="#aboutme">About</a></li>
+                    <li className="navbar-menuItem" ><a href="#projects">Projects</a></li>
+                    <li className="navbar-menuItem" ><a href="#footer">Contacts</a></li>
                 </ul>
             </div>
         );
