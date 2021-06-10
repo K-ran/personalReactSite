@@ -21,6 +21,35 @@ class Navbar extends Component {
         )
     }
 
+    updateDimensions = () => {
+        if(window.innerWidth >= 600)
+        {
+            this.setState(
+                {
+                    barextended: true
+                }
+            )
+        }
+        else
+        {
+            this.setState(
+                {
+                    barextended: false
+                }
+            )
+        }
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+    };
+
+    componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions);
+        this.updateDimensions(); // resize once atleast
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions);
+    }
+
     render() {
         return (
             <div className="navbar">
@@ -30,7 +59,7 @@ class Navbar extends Component {
                 </div>
                
                 <ul className="navbar-menuItemList" style={{display: this.state.barextended?"flex":"none"}}>
-                    <li className="navbar-menuItem" ><a href="#home">Home</a></li>
+                    <li className="navbar-menuItem" ><a href="#root">Home</a></li>
                     <li className="navbar-menuItem" ><a href="#aboutme">About</a></li>
                     <li className="navbar-menuItem" ><a href="#projects">Projects</a></li>
                     <li className="navbar-menuItem" ><a href="#footer">Contacts</a></li>

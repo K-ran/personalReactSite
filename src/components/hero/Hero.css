@@ -1,5 +1,5 @@
 .hero{
-    background-image:  linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url('/src/images/banner.jpg');
+    background-image:  linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), url('/src/images/banner.jpg');
     color: white;
     min-height: 10em;
     background-size: cover;
@@ -13,10 +13,28 @@
     font-size: 1.2rem;
 }
 
+@media (min-width: 600px)
+{
+    .hero
+    {
+        min-height: 15em;
+    }
+
+}
+
 .quote
 {
     width: 90%;
     text-align: center;
+}
+
+@media (min-width: 600px)
+{
+    .quote
+    {
+        font-size: 1.5em;
+    }
+
 }
 
 .author
@@ -24,5 +42,14 @@
     margin-top: .5em;
     max-width: 90%;
     text-align: center;
+
+}
+
+@media (min-width: 600px)
+{
+    .author
+    {
+        font-size: 1.5em;
+    }
 
 }

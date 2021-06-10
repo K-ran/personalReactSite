@@ -4,8 +4,16 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding:0.5em;
-    
+    padding:0.5em;   
+}
+
+@media (min-width: 600px)
+{
+    .navbar 
+    {
+        flex-direction: row;
+    }
+
 }
 
 .navbar-title{
@@ -17,6 +25,13 @@
 
 }
 
+@media (min-width: 600px)
+{
+    .navbar-title
+    {
+        font-size: 1.5rem;
+    }
+}
 .navbar-title-text
 {
     width: 100%;
@@ -30,11 +45,28 @@
     padding: 0.1rem;
 }
 
+@media (min-width: 600px) 
+{
+    .navbar-title-icon
+    {
+        display: none;
+    }
+}
+
 .navbar-menuItemList{
     display: flex;
     flex-direction: column;
     margin: 0%;
     padding:0%;
+}
+
+@media (min-width: 600px)
+{
+    .navbar-menuItemList{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2rem;
+    }
 }
 
 .navbar-menuItem > a
