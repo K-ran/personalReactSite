@@ -7,7 +7,7 @@
     padding:0.5em;   
 }
 
-@media (min-width: 600px)
+@media (min-width: 850px)
 {
     .navbar 
     {
@@ -25,7 +25,7 @@
 
 }
 
-@media (min-width: 600px)
+@media (min-width: 850px)
 {
     .navbar-title
     {
@@ -45,7 +45,7 @@
     padding: 0.1rem;
 }
 
-@media (min-width: 600px) 
+@media (min-width: 850px) 
 {
     .navbar-title-icon
     {
@@ -60,7 +60,7 @@
     padding:0%;
 }
 
-@media (min-width: 600px)
+@media (min-width: 850px)
 {
     .navbar-menuItemList{
         display: flex;

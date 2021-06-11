@@ -22,7 +22,7 @@ class Navbar extends Component {
     }
 
     updateDimensions = () => {
-        if(window.innerWidth >= 600)
+        if(window.innerWidth >= 850)
         {
             this.setState(
                 {

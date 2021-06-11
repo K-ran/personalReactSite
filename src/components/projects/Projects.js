@@ -16,7 +16,9 @@ class Projects extends Component {
         return (
             <div id="projects" className="card_container">
                 <div className="projects_title">Projects</div>
-                {item_array}
+                <div className="project_cards">
+                    {item_array}
+                </div>
             </div>
         );
     }

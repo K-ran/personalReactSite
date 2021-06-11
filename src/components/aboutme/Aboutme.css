@@ -1,4 +1,5 @@
-.profile_image {
+.profile_image
+{
     width: 30%;
     border-radius: 50%;
     object-fit: cover;
@@ -6,14 +7,24 @@
     box-shadow: 0px 0px 1px black;
 }
 
-.aboutme{
+@media (min-width: 850px)
+{
+    .profile_image
+    {
+        width: 15em;
+    }
+}
+
+.aboutme
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4em;
 }
 
-.profile_desc{
+.profile_desc
+{
     width: 80%;
     text-align: justify;
     margin-top: 3em;
@@ -22,8 +33,39 @@
     letter-spacing: 0.02rem;
 }
 
-.about_me_title{
+@media (min-width: 850px)
+{
+    .profile_desc
+    {
+        margin-top: 0em;
+        padding: 2em;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+.about_me_title
+{
     margin-bottom: 0.5em;
     font-size: 2.5rem;
     font-variant-caps: all-petite-caps;
+}
+
+.about_me_content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+@media (min-width: 850px)
+{
+    .about_me_content
+    {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1em;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
 }
