@@ -23,3 +23,18 @@
     color: white;
     margin: .5em;
 }
+
+
+.contact_me
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+@media (min-width:850px) {
+    .contact_me
+    {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+}

@@ -50,8 +50,11 @@
 {
     .project_card
     {
-        margin: 0;
-        width: 25%;
+        margin: 1em;
+        margin-top: 2em;
+        width: 33%;
+        max-width: 20em;
+        min-width: 15em;
     }
 }
 
@@ -127,6 +130,14 @@
     flex-direction: column;
 }
 
+@media (min-width: 850px)
+{
+    .modal{
+        flex-direction: row;
+        max-width: 1200px;
+        margin: auto;
+    }
+}
 .modal_overlay
 {
     position: fixed;
@@ -141,6 +152,17 @@
     object-fit: cover;
 }
 
+@media (min-width: 850px)
+{
+    .modal_image{
+        width: 30%;
+        height: 100%;
+        margin-right: 2em;
+        object-fit: cover;
+
+    }
+}
+
 .ReactModal__Body--open {
     overflow: hidden;
 }
@@ -152,20 +174,43 @@
     flex-direction: column;
     flex: 1;
 }
+@media (min-width: 850px)
+{
+    .modal_container{
+        margin-right: 1em;
+    }
+}
 
 .modal_project_name
 {
     font-size: 2rem;
-    border-bottom: 2px solid rgb(238, 237, 237);
+    border-bottom: 2px solid rgb(0, 221, 136);
 }
+
+@media (min-width: 850px)
+{
+    .modal_project_name{
+        font-size: 3rem;
+        margin-top: 0.5em;
+    }
+}
+
 .modal_project_long_desc
 {
     margin-top: 1em;
     flex-grow: 1;
-    line-height: 1.5rem;
-    letter-spacing: 0.05rem;
+    line-height: 1.5;
+    letter-spacing: 0.05;
 }
 
+@media (min-width: 850px)
+{
+    .modal_project_long_desc{
+        font-size: 1.5rem;
+        line-height: 1.5;
+        letter-spacing: 0.05;
+    }
+}
 
 .fa_link_anchor
 {
@@ -173,10 +218,26 @@
     margin: 2px;
 }
 
+@media (min-width: 850px)
+{
+    .fa_link_anchor
+    {
+        margin: 1em;
+    }
+}
+
 .modal_footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
+    margin-top: .3em;
+}
+
+@media (min-width: 850px)
+{
+    .modal_footer
+    {
+        margin-bottom: 1em;
+    }
 }
 
 .modal_external_links_container
@@ -185,6 +246,8 @@
     width: 70%;
 }
 
+
+
 .external_link_heading
 {
     margin-top: auto;
@@ -192,10 +255,15 @@
     margin-right: 0.5em;
 }
 
-.modal_project_links
+@media (min-width: 850px)
 {
 
+    .external_link_heading
+    {
+        font-size: 1.5rem;
+    }
 }
+
 
 .modal_close_container
 {
@@ -213,9 +281,12 @@
     background: none;
     border: 1px solid rgba(0, 0, 0, 1);
     border-radius: 4px;
-    padding: .4em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: .2em;
+    padding-left: auto;
+    padding-right: auto;
+    width: 10em;
+    height: 2em;
+    font-size: 1rem;
 }
 
 .modal_close_button:hover
